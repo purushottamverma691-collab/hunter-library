@@ -2,37 +2,41 @@
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hunter Library | AI Hub</title>
+    <title>Hunter Library | Premium Vault</title>
     <style>
-        * { box-sizing: border-box; }
-        body { background-color: #0d1117; color: #e6edf3; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 20px; }
-        .header { text-align: center; padding: 40px 0; border-bottom: 2px solid #30363d; }
-        h1 { color: #58a6ff; margin: 0; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; padding: 40px 0; }
-        .card { background: #161b22; border: 1px solid #30363d; padding: 20px; border-radius: 12px; transition: 0.3s; }
-        .card:hover { border-color: #58a6ff; transform: translateY(-5px); }
-        .btn { display: block; background: #238636; color: white; padding: 10px; text-align: center; border-radius: 6px; text-decoration: none; margin-top: 15px; }
+        body { 
+            background: radial-gradient(circle at center, #1a1a2e, #0f0f1a); 
+            color: white; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 40px; min-height: 100vh;
+        }
+        .header { text-align: center; margin-bottom: 60px; }
+        h1 { font-size: 3.5em; letter-spacing: 2px; color: #4cc9f0; text-shadow: 0 0 20px rgba(76, 201, 240, 0.5); }
+        .shelf { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; max-width: 1200px; margin: auto; }
+        .book { 
+            background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1);
+            padding: 30px; border-radius: 20px; text-align: center; transition: 0.4s; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .book:hover { transform: scale(1.05); border-color: #4cc9f0; background: rgba(76, 201, 240, 0.1); }
+        .cmd-box { background: #000; padding: 15px; border-radius: 8px; font-family: monospace; color: #00ff00; margin: 20px 0; border-left: 4px solid #4cc9f0; }
+        .btn { display: inline-block; padding: 12px 30px; background: #4cc9f0; color: #000; border-radius: 30px; text-decoration: none; font-weight: bold; }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>Hunter Library</h1>
-        <p>AI द्वारा रचित ज्ञान का डिजिटल खजाना</p>
+        <p>प्रोफेशनल AI कमांड्स और ज्ञान का सुरक्षित संग्रह</p>
     </div>
-
-    <div class="grid">
-        <!-- बुक 1 -->
-        <div class="card">
-            <h3>बुक का नाम यहाँ लिखें</h3>
-            <p>यहाँ बुक के बारे में छोटी जानकारी दें...</p>
-            <a href="#" class="btn">अभी पढ़ें</a>
+    <div class="shelf">
+        <div class="book">
+            <h3>Cyber Security 101</h3>
+            <p>बुनियादी सुरक्षा गाइड</p>
+            <div class="cmd-box">git clone https://...</div>
+            <a href="#" class="btn">Access Vault</a>
         </div>
-        <!-- बुक 2 -->
-        <div class="card">
-            <h3>अगली बुक यहाँ आएगी</h3>
-            <p>यहाँ बुक के बारे में छोटी जानकारी दें...</p>
-            <a href="#" class="btn">अभी पढ़ें</a>
+        <div class="book">
+            <h3>Automation Pro</h3>
+            <p>टर्मक्स ऑटोमेशन स्क्रिप्ट्स</p>
+            <div class="cmd-box">python3 main.py</div>
+            <a href="#" class="btn">Access Vault</a>
         </div>
     </div>
 </body>
